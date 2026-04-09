@@ -1,55 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>For You 💌</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta charset="UTF-8">
+<title>For You 💌</title>
 
-<div class="hero">
-  <h1>scroll down slowly 🌸</h1>
-</div>
-
-<section class="hidden">
-  <h2>
-    i know you tak banyak menang anugerah but this is some of the anugerah yang you deserve:
-  </h2>
-</section>
-
-<section class="hidden award">
-  <p>🏆 best/amazing girlfriend ever</p>
-</section>
-
-<section class="hidden award">
-  <p>🌷 the most beautiful girlfriend</p>
-</section>
-
-<section class="hidden award">
-  <p>🎧 the best listener</p>
-</section>
-
-<section class="hidden award">
-  <p>🎸 the greatest provider</p>
-</section>
-
-<section class="hidden">
-  <img src="img/her.jpg" class="photo">
-</section>
-
-<div class="decorations">
-  🎸 🎤 🥁 🎶 🎸 🎤 🥁
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
+<style>
 body {
   margin: 0;
   font-family: 'Courier New', monospace;
   background: #fff7f9;
   color: #333;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -95,6 +57,47 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>scroll down slowly 🌸</h1>
+</div>
+
+<section class="hidden">
+  <h2>
+    i know you tak banyak menang anugerah but this is some of the anugerah yang you deserve:
+  </h2>
+</section>
+
+<section class="hidden award">
+  <p>🏆 best/amazing girlfriend ever</p>
+</section>
+
+<section class="hidden award">
+  <p>🌷 the most beautiful girlfriend</p>
+</section>
+
+<section class="hidden award">
+  <p>🎧 the best listener</p>
+</section>
+
+<section class="hidden award">
+  <p>🎸 the greatest provider</p>
+</section>
+
+<section class="hidden">
+  <img src="her.jpg" class="photo">
+</section>
+
+<div class="decorations">
+  🎸 🎤 🥁 🎶 🎸 🎤 🥁
+</div>
+
+<script>
 const hiddenElements = document.querySelectorAll('.hidden');
 
 const observer = new IntersectionObserver((entries) => {
@@ -106,3 +109,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 hiddenElements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
